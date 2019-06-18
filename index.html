@@ -94,7 +94,7 @@
                 <br>&nbsp<i class="fas fa-award"></i> &nbsp Spot Award - For taking ownership and helping the team in finishing projects under a tight timeline.
                 <br>&nbsp<i class="fas fa-bullhorn"></i> &nbsp Promotion - For contributions to several key initiatives, helping with automation strategy, finding critical bugs and helping with product investigation.
                 <br>&nbsp<i class="fas fa-plane-departure"></i> &nbsp Travel 
-                <br>&nbsp &nbsp &nbsp &nbsp * Visited PayPal San Jose office multiple times to work on &nbsp &nbsp &nbsp &nbsp&nbsp&nbsp &nbsp  &nbsp  &nbsp  &nbsp &nbsp  &nbspinitiatives critical for Credit.
+                <br>&nbsp &nbsp &nbsp &nbsp * Visited PayPal San Jose office multiple times to work on&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspinitiatives critical for Credit.
                 <br>&nbsp &nbsp &nbsp &nbsp * Visited PayPal Germany office to help launch DE &nbsp &nbsp &nbsp &nbsp&nbsp&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp&nbsp &nbsp&nbsp  &nbsp  &nbsp  &nbsp  &nbsp &nbsp  &nbspinstallments product.
                 <br>&nbsp &nbsp &nbsp &nbsp * Visited PayPal Chennai office to train new team &nbsp &nbsp &nbsp &nbsp&nbsp&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp&nbsp   &nbsp  &nbsp  &nbsp  &nbsp  &nbsp  &nbspmembers.
                 <br>&nbsp &nbsp &nbsp &nbsp * Visited Australia during development phase of &nbsp &nbsp &nbsp &nbsp&nbsp&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp &nbsp &nbsp  &nbsp  &nbsp  &nbsp  &nbsp  &nbspco-branded partnership product.
@@ -202,7 +202,7 @@
 <script src="https://www.amcharts.com/lib/3/ammap.js" type="text/javascript"></script>
 <script src="https://www.amcharts.com/lib/3/maps/js/worldHigh.js" type="text/javascript"></script>
 <script src="https://www.amcharts.com/lib/3/themes/dark.js" type="text/javascript"></script>
-<div id="mapdiv" style="width: 630px; height: 350px; margin-left:auto; margin-right:0; margin-bottom: 50px"></div>
+<!-- <div id="mapdiv" style="width: 630px; height: 350px; margin-left:auto; margin-right:0; margin-bottom: 50px"></div> -->
 <script type="text/javascript">
 var map = AmCharts.makeChart("mapdiv",{
 type: "map",
@@ -287,16 +287,24 @@ rollOverOutlineColor : "#000000"
             }
             for (var i = 0; i < blog.length; i++) {
                 $("#blogs").append(`
-            <!-- <a href="./blog/${blog[i].url_title}/" target="_blank"> -->
-                <section>
-                    
+                <section>    
                     <img src="${blog[i].top_image}">
                     <div class="blog_container">
                         <div class="section_title">${blog[i].title}</div>
-                        <div class="about_section">
-                            ${blog[i].sub_title}. 
-                            <p> countries visited in green. </p>
-                        </div>
+
+                        <table>
+                            <tr>
+                                <td width=40%> 
+                                    <div class="about_section">
+                                         ${blog[i].sub_title}. 
+\                                    </div>
+                                </td>
+                                <td width=100%> 
+                                    <div id="mapdiv" class="projects " style="width: 630px; height: 350px; margin-right= 0px"></div>
+                                </td>
+                            </tr>
+                        </table>
+                      
                     </div>
 
                 </section>

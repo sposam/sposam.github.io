@@ -13,6 +13,77 @@
     <div id="loading">
         <div id="spinner"></div>
     </div>
+
+    <script src="https://www.amcharts.com/lib/3/ammap.js" type="text/javascript"></script>
+<script src="https://www.amcharts.com/lib/3/maps/js/worldHigh.js" type="text/javascript"></script>
+<script src="https://www.amcharts.com/lib/3/themes/dark.js" type="text/javascript"></script>
+<!-- <div id="mapdiv" style="width: 630px; height: 350px; margin-left:auto; margin-right:0; margin-bottom: 50px"></div> -->
+<script type="text/javascript">
+var map = AmCharts.makeChart("mapdiv",{
+type: "map",
+theme: "dark",
+projection: "mercator",
+panEventsEnabled : true,
+backgroundColor : "#000000",
+backgroundAlpha : 1,
+zoomControl: {
+zoomControlEnabled : false
+},
+dataProvider : {
+map : "worldHigh",
+getAreasFromMap : true,
+areas :
+[
+	{
+		"id": "BE",
+		"showAsSelected": true
+	},
+	{
+		"id": "FR",
+		"showAsSelected": true
+	},
+	{
+		"id": "DE",
+		"showAsSelected": true
+	},
+	{
+		"id": "NL",
+		"showAsSelected": true
+	},
+	{
+		"id": "US",
+		"showAsSelected": true
+	},
+	{
+		"id": "CO",
+		"showAsSelected": true
+	},
+	{
+		"id": "PE",
+		"showAsSelected": true
+	},
+	{
+		"id": "IN",
+		"showAsSelected": true
+	},
+	{
+		"id": "AU",
+		"showAsSelected": true
+	}
+]
+},
+areasSettings : {
+autoZoom : false,
+color : "#3a5277",
+colorSolid : "#053a13",
+selectedColor : "#053a13",
+outlineColor : "#666666",
+rollOverColor : "#9EC2F7",
+rollOverOutlineColor : "#000000"
+}
+});
+</script>
+
     <div id="profile">
         <div id="profile_img" style="background: url(https://res.cloudinary.com/dsnjtt2ad/image/upload/c_scale,h_331,r_0/v1560290973/944187_653329814696097_1334212257_n_crqqnp.jpg) center;"></div>
         <div id="username"><span style="display:block;">Siddartha Posam</span><a href="https://twitter.com/SiddarthaPosam" target="_blank">@siddarthaposam</a></div>
@@ -198,77 +269,6 @@
             <div id="blogs"></div>
         </div>
     </div>
-
-<script src="https://www.amcharts.com/lib/3/ammap.js" type="text/javascript"></script>
-<script src="https://www.amcharts.com/lib/3/maps/js/worldHigh.js" type="text/javascript"></script>
-<script src="https://www.amcharts.com/lib/3/themes/dark.js" type="text/javascript"></script>
-<!-- <div id="mapdiv" style="width: 630px; height: 350px; margin-left:auto; margin-right:0; margin-bottom: 50px"></div> -->
-<script type="text/javascript">
-var map = AmCharts.makeChart("mapdiv",{
-type: "map",
-theme: "dark",
-projection: "mercator",
-panEventsEnabled : true,
-backgroundColor : "#000000",
-backgroundAlpha : 1,
-zoomControl: {
-zoomControlEnabled : false
-},
-dataProvider : {
-map : "worldHigh",
-getAreasFromMap : true,
-areas :
-[
-	{
-		"id": "BE",
-		"showAsSelected": true
-	},
-	{
-		"id": "FR",
-		"showAsSelected": true
-	},
-	{
-		"id": "DE",
-		"showAsSelected": true
-	},
-	{
-		"id": "NL",
-		"showAsSelected": true
-	},
-	{
-		"id": "US",
-		"showAsSelected": true
-	},
-	{
-		"id": "CO",
-		"showAsSelected": true
-	},
-	{
-		"id": "PE",
-		"showAsSelected": true
-	},
-	{
-		"id": "IN",
-		"showAsSelected": true
-	},
-	{
-		"id": "AU",
-		"showAsSelected": true
-	}
-]
-},
-areasSettings : {
-autoZoom : false,
-color : "#3a5277",
-colorSolid : "#053a13",
-selectedColor : "#053a13",
-outlineColor : "#666666",
-rollOverColor : "#9EC2F7",
-rollOverOutlineColor : "#000000"
-}
-});
-</script>
-
 
     <script type="text/javascript">
         setTimeout(function () {

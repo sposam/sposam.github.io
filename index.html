@@ -20,6 +20,8 @@
         <div id="about">
                 <span style="display:block;"><i class="fas fa-envelope"></i> &nbsp; siddartha18@ gmail.com</span>
                 <span style="display:block;"><i class="fas fa-map-marker-alt"></i> &nbsp;&nbsp; Baltimore, The greatest city in America!</span>
+                <br>
+                <span style="display:block;"> <i class="fas fa-baby"></i> &nbsp;&nbsp; Hyderabad, The city of pearls <i class="fas fa-gem"></i></span>
                 <br><br>
 
                 <span style="display:block;"><i class="fas fa-users"></i> &nbsp; <a href="www.linkedin.com/in/sposam" target="_blank">linkedin</a> &nbsp; &nbsp;  <i class="fab fa-goodreads"></i> &nbsp; <a href="https://www.goodreads.com/user/show/66975964-siddartha-posam" target="_blank">goodreads</a></span>
@@ -141,7 +143,7 @@
 
             </td>
             <td width="70%">
-                <h2>In to the world of Intelligence</h2>
+                <h2>Into the world of Intelligence</h2>
                 * Graduate research assistant in Institute for Intelligent Systems.
                 <br>
                 * Graduate assistant in Fogelman College of Business.
@@ -196,6 +198,78 @@
             <div id="blogs"></div>
         </div>
     </div>
+
+<script src="https://www.amcharts.com/lib/3/ammap.js" type="text/javascript"></script>
+<script src="https://www.amcharts.com/lib/3/maps/js/worldHigh.js" type="text/javascript"></script>
+<script src="https://www.amcharts.com/lib/3/themes/dark.js" type="text/javascript"></script>
+<div id="mapdiv" style="width: 630px; height: 350px; margin-left:auto; margin-right:0; margin-bottom: 50px"></div>
+<script type="text/javascript">
+var map = AmCharts.makeChart("mapdiv",{
+type: "map",
+theme: "dark",
+projection: "mercator",
+panEventsEnabled : true,
+backgroundColor : "#000000",
+backgroundAlpha : 1,
+zoomControl: {
+zoomControlEnabled : false
+},
+dataProvider : {
+map : "worldHigh",
+getAreasFromMap : true,
+areas :
+[
+	{
+		"id": "BE",
+		"showAsSelected": true
+	},
+	{
+		"id": "FR",
+		"showAsSelected": true
+	},
+	{
+		"id": "DE",
+		"showAsSelected": true
+	},
+	{
+		"id": "NL",
+		"showAsSelected": true
+	},
+	{
+		"id": "US",
+		"showAsSelected": true
+	},
+	{
+		"id": "CO",
+		"showAsSelected": true
+	},
+	{
+		"id": "PE",
+		"showAsSelected": true
+	},
+	{
+		"id": "IN",
+		"showAsSelected": true
+	},
+	{
+		"id": "AU",
+		"showAsSelected": true
+	}
+]
+},
+areasSettings : {
+autoZoom : false,
+color : "#3a5277",
+colorSolid : "#053a13",
+selectedColor : "#053a13",
+outlineColor : "#666666",
+rollOverColor : "#9EC2F7",
+rollOverOutlineColor : "#000000"
+}
+});
+</script>
+
+
     <script type="text/javascript">
         setTimeout(function () {
             document.getElementById("loading").classList.add("animated");
@@ -215,25 +289,13 @@
                 $("#blogs").append(`
             <!-- <a href="./blog/${blog[i].url_title}/" target="_blank"> -->
                 <section>
+                    
                     <img src="${blog[i].top_image}">
                     <div class="blog_container">
                         <div class="section_title">${blog[i].title}</div>
                         <div class="about_section">
-                            ${blog[i].sub_title}
-                        </div>
-                        <div>
-                            <ol>
-                                <li>India (duh!)</li>
-                                <li>United States of America</li>
-                                <li>Germany</li>
-                                <li>France</li>
-                                <li>Belgium</li>
-                                <li>Netherlands</li>
-                                <li>Australia</li>
-                                <li>*Colombia</li>
-                                <li>*Peru</li>
-                            </ol>    
-                            *Upcoming
+                            ${blog[i].sub_title}. 
+                            <p> countries visited in green!
                         </div>
                     </div>
 
@@ -246,6 +308,8 @@
         });
     </script>
 
+    
+
     <script type="text/javascript">
         if ('serviceWorker' in navigator) {
             window.addEventListener('load', () => {
@@ -254,6 +318,9 @@
         }
     </script>
 
+
+
+    
 
 
 </body></html>

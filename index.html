@@ -34,23 +34,25 @@
     <div id="display">
 
             <h1>About me.</h1>
+
+            <tr>
+                <td width="50%">
             <div id="work">
-                    <div class="projects" id="work_section" width="2000px">
+                    <div class="projects" id="work_section" width="40%">
                                 <section>
                                    I'm a software engineer and have developed a deep sense of empathy for what the customer needs are. To me technology is more than just developing great software and hardware, it is about adding value and helping people. 
+                                  <!-- <br>In my 'free' time, I enjoy reading books, going for a run! --> 
                                    <br><br>
                                    Skills: <em>C, Java, Javascript, NodeJS, Python, MATLAB, golang, shell scripting and all other cool stuff that is out there.</em> 
                                 </section>
                                 </a>          
                               </div>
             </div>
-
-
-
+            </td>
         <table>
 
         <tr>
-            <td width="60%">
+            <td width="40%">
                     <div id="work">
                             <h1>Work.</h1>
                             <div class="projects" id="work_section">
@@ -58,7 +60,7 @@
                                             <div id="profile_img" style="background: url(https://res.cloudinary.com/dsnjtt2ad/image/upload/v1560288802/pplogo384_zny3vw.png) center;"></div>     
                                             <div class="section_title">PayPal</div>
                                             <div class="about_section">
-                                            <span style="display:block;">Software Engineer 3</span>
+                                            <span style="display:block;">Software Engineer 3, Quality</span>
                                             </div>
                                             <!-- <div class="bottom_section">
                                                 <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; HTML</span>
@@ -70,8 +72,30 @@
                         </div>
             </td>
 
-            <td width="40%"> 
-                 I work hard so that our customers experience delightful products. I also build tools that will be beneficial internally and help expedite the testing process. 
+            <td width="100%"> 
+                <h2>Helping Democratize Financial Services</h2>
+                I work hard so that our customers experience delightful products. 
+                <ul>
+                    <li>
+                        Test lead for PayPal Credit products.        
+                    </li>
+                    <li>
+                        Acted as a bridge between Product, development, program management and legal teams. 
+                    </li>
+                    <li>
+                        Significantly reduced testing period using automation.
+                    </li>
+                    <br>
+                     
+                </li>
+                </ul>
+                <br>&nbsp<i class="fas fa-award"></i> &nbsp Spot Award - For taking ownership and helping the team in finishing projects under a tight timeline.
+                <br>&nbsp<i class="fas fa-bullhorn"></i> &nbsp Promotion - For contributions to several key initiatives, helping with automation strategy, finding critical bugs and helping with product investigation.
+                <br>&nbsp<i class="fas fa-plane-departure"></i> &nbsp Travel 
+                <br>&nbsp &nbsp &nbsp &nbsp * Visited PayPal San Jose office multiple times to work on &nbsp &nbsp &nbsp &nbsp&nbsp&nbsp &nbsp  &nbsp  &nbsp  &nbsp &nbsp  &nbspinitiatives critical for Credit.
+                <br>&nbsp &nbsp &nbsp &nbsp * Visited PayPal Germany office to help launch DE &nbsp &nbsp &nbsp &nbsp&nbsp&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp&nbsp &nbsp&nbsp  &nbsp  &nbsp  &nbsp  &nbsp &nbsp  &nbspinstallments product.
+                <br>&nbsp &nbsp &nbsp &nbsp * Visited PayPal Chennai office to train new team &nbsp &nbsp &nbsp &nbsp&nbsp&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp&nbsp   &nbsp  &nbsp  &nbsp  &nbsp  &nbsp  &nbspmembers.
+                <br>&nbsp &nbsp &nbsp &nbsp * Visited Australia during development phase of &nbsp &nbsp &nbsp &nbsp&nbsp&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp &nbsp &nbsp  &nbsp  &nbsp  &nbsp  &nbsp  &nbspco-branded partnership product.
             </td>
         </tr>
 
@@ -94,8 +118,9 @@
             </td>
 
             <td width="70%">
+                <h2>Getting my feet wet in the world of business</h2>
+                Developed business intuition by understanding essential business concepts and problem solving skills.<br>
                 Took this online certification to understand how economics and finance work. I can probably look at the financial statement or earnings report of a company and figure out how the company is making or spending money.
-    
             </td>
         </tr>
      
@@ -116,8 +141,18 @@
 
             </td>
             <td width="70%">
+                <h2>In to the world of Intelligence</h2>
+                * Graduate research assistant in Institute for Intelligent Systems.
+                <br>
+                * Graduate assistant in Fogelman College of Business.
+                <br> 
+                * Projects included building neural nets, recommendation &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspsystems
+                <br>
+                * Certificate in Imaging and Signal Processing.
+
+                <br>
+                <br>
                 My first country away from home. For better or worse, these 2 years were the most impactful in my life. Had my first paying job, learnt to live independently, eating pizza 3 times a week and other cool stuff. Also, did research in Machine learning, AI and cognitive science.
-                Got a certificate in Imaging and Signal Processing.
             </td>
         </tr>
        
@@ -138,7 +173,13 @@
     
                 </td>
                 <td width="70%">
-                    I loved playing around with electronics devices and learnt how to apply science and mathematics to practical problems in the field of electronics and communications! Secured an In-plant training certificate from <a href="https://hal-india.co.in/" target="_blank">Hindustan Aeronautics Limited</a> and saw up-close on how military equipment (Jet aircrafts and helicopters) are designed and tested.
+                    <h2>Understanding Hardware and Software interactions</h2>
+                    * Built a WiFi enabled prototype using ARM microcontrollers.
+                    <br>
+                    * Secured an In-plant training certificate from <a href="https://hal-india.co.in/" target="_blank">Hindustan Aeronautics Limited</a> and saw up-close on how military equipment (Jet aircrafts and helicopters) are designed and tested.
+                    <br>
+                    <br>
+                    I loved playing around with electronics devices and learnt how to apply science and mathematics to practical problems in the field of electronics and communications! 
                 </td>
             </tr>
      
@@ -172,7 +213,7 @@
             }
             for (var i = 0; i < blog.length; i++) {
                 $("#blogs").append(`
-            <a href="./blog/${blog[i].url_title}/" target="_blank">
+            <!-- <a href="./blog/${blog[i].url_title}/" target="_blank"> -->
                 <section>
                     <img src="${blog[i].top_image}">
                     <div class="blog_container">
@@ -193,8 +234,9 @@
                                 <li>*Peru</li>
                             </ol>    
                             *Upcoming
-                        </div
+                        </div>
                     </div>
+
                 </section>
             </a>
             `);
@@ -211,6 +253,7 @@
             });
         }
     </script>
+
 
 
 </body></html>

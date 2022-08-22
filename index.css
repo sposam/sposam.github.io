@@ -218,6 +218,14 @@ body{
     background-size:cover !important;
 }
 
+#profile_img_two {
+    width:250px;
+    height:350px;
+    border-radius:10px;
+    background-size:cover !important;
+    float: left;
+}
+
 #profile div {
     font-weight:bold;
     margin:1.5vh 0px;
